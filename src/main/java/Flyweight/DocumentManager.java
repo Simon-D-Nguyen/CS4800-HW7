@@ -11,9 +11,9 @@ import java.util.ArrayList;
 public class DocumentManager {
     private File document;
     private ArrayList<String> plaintext;
-    FontFactory fonts;
-    ColorFactory colors;
-    SizeFactory sizes;
+    private FontFactory fonts;
+    private ColorFactory colors;
+    private SizeFactory sizes;
 
 
     private Font fontCheck(String fontName){
