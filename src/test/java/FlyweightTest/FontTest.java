@@ -34,4 +34,19 @@ public class FontTest {
         assertEquals(expected, actual);
     }
 
+
+    @Test
+    public void testToString(){
+        //Given
+        Font testFont = new Font("H");
+        String expected = "Font: H";
+
+        //When
+        String actual = testFont.toString();
+
+        //Then
+        assertEquals(expected, actual);
+    }
+
+
 }
