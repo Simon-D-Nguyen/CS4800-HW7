@@ -10,14 +10,12 @@ public class Song {
     public Song(String title,
                 String artist,
                 String album,
-                int duration,
-                int id) {
+                int duration) {
 
         this.title = title;
         this.artist = artist;
         this.album = album;
         this.duration = duration;
-        this.id = id;
     }
 
 
@@ -40,8 +38,4 @@ public class Song {
         return duration;
     }
 
-
-    public Integer getId() {
-        return id;
-    }
 }

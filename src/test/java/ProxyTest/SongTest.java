@@ -12,7 +12,7 @@ public class SongTest {
         String expected = "No";
 
         //When
-        Song tester = new Song("No", null, null, 0, 0);
+        Song tester = new Song("No", null, null, 0);
         String actual = tester.getTitle();
 
         //Then
@@ -26,7 +26,7 @@ public class SongTest {
         String expected = "Baylor";
 
         //When
-        Song tester = new Song("No", "Baylor", null, 0, 0);
+        Song tester = new Song("No", "Baylor", null, 0);
         String actual = tester.getArtist();
 
         //Then
@@ -40,7 +40,7 @@ public class SongTest {
         String expected = "ScotchTape Terrors";
 
         //When
-        Song tester = new Song("No", null, "ScotchTape Terrors", 0, 0);
+        Song tester = new Song("No", null, "ScotchTape Terrors", 0);
         String actual = tester.getAlbum();
 
         //Then
@@ -54,21 +54,8 @@ public class SongTest {
         int expected = 0;
 
         //When
-        Song tester = new Song("No", null, "Terrors", 0, 0);
+        Song tester = new Song("No", null, "Terrors", 0);
         int actual = tester.getDuration();
-
-        //Then
-        assertEquals(expected, actual);
-    }
-
-    @Test
-    public void testGetId(){
-        //Given
-        int expected = 0;
-
-        //When
-        Song tester = new Song("No", null, "ScotchTape Terrors", 0, 0);
-        int actual = tester.getId();
 
         //Then
         assertEquals(expected, actual);
