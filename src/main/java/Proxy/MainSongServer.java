@@ -9,12 +9,18 @@ public class MainSongServer implements SongService {
 
 
     private boolean isValidIndex(Integer index) {
-        return index >= 0 && songs.size() >= index;
+        return index >= 0 && songs.size() > index;
     }
 
 
     public MainSongServer(){
         songs = new ArrayList<>();
+    }
+
+
+    public MainSongServer(List<Song> songs) {
+        this.songs = new ArrayList<>();
+        this.songs.addAll(songs);
     }
 
 
@@ -51,10 +57,6 @@ public class MainSongServer implements SongService {
             }
         }
 
-        if (output.isEmpty()) {
-            return null;
-        }
-
         return output;
     }
 
@@ -71,10 +73,6 @@ public class MainSongServer implements SongService {
             if(song.getAlbum().equals(album)) {
                 output.add(song);
             }
-        }
-
-        if (output.isEmpty()) {
-            return null;
         }
 
         return output;
