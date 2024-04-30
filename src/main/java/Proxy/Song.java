@@ -38,4 +38,12 @@ public class Song {
         return duration;
     }
 
+
+    @Override
+    public String toString() {
+        return "Title: " + title + System.lineSeparator() +
+                "\tArtist: " + artist + System.lineSeparator() +
+                "\tAlbum: " + album + System.lineSeparator() +
+                "\tDuration: " + duration + System.lineSeparator();
+    }
 }

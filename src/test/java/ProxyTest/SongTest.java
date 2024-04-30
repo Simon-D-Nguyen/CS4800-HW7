@@ -60,4 +60,22 @@ public class SongTest {
         //Then
         assertEquals(expected, actual);
     }
+
+
+    @Test
+    public void testToString(){
+        //Given
+        String expected = "Title: test" + System.lineSeparator() +
+                "\tArtist: Simon" + System.lineSeparator() +
+                "\tAlbum: HW7" + System.lineSeparator() +
+                "\tDuration: 10" + System.lineSeparator();
+
+        //When
+        Song tester = new Song("test", "Simon", "HW7", 10);
+        String actual = tester.toString();
+
+        //Then
+        assertEquals(expected, actual);
+    }
+
 }
